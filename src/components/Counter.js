@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default class Counter extends Component {
+class Counter extends Component {
     constructor(props) {
         super(props);
         this.incrementAsync = this.incrementAsync.bind(this);
@@ -49,3 +49,5 @@ Counter.propTypes = {
     onIncrement: PropTypes.func.isRequired,
     onDecrement: PropTypes.func.isRequired
 }
+
+export default Counter;
